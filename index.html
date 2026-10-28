@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 1 - Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal con Parcial y División -->
+    <header class="encabezado-principal">
+        <h1>Parcial 1 - División 132</h1>
+    </header>
+
+    <main>
+        <!-- Título de la tienda y contador -->
+        <section class="encabezado-tienda">
+            <h1 id="titulo-tienda">Burger House</h1>
+            <div id="contador-carrito">Carrito (<span id="cantidad-carrito">0</span>)</div>
+        </section>
+
+        
+        <hr>
+
+        <!-- Sección de filtros y búsqueda -->
+        <section class="seccion-filtros">
+            <div class="contenedor-categorias">
+                <div>
+                    <input type="radio" id="radio-todas" name="categoria" value="Todas" checked>
+                    <label for="radio-todas">Todas</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio-clasicas" name="categoria" value="Clásicas">
+                    <label for="radio-clasicas">Clásicas</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio-especiales" name="categoria" value="Especiales">
+                    <label for="radio-especiales">Especiales</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio-combos" name="categoria" value="Combos">
+                    <label for="radio-combos">Combos</label>
+                </div>
+            </div>
+
+            <!-- Barra de búsqueda y ordenamiento -->
+            <div class="barra-busqueda">
+                <!--  Evento keyup -->
+                <input class="input-busqueda" type="text" id="input-busqueda" placeholder="Buscar menú">
+                
+                <select id="select-orden">
+                    <option value="menor">Menor precio</option>
+                    <option value="mayor">Mayor precio</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Sección cartas menú -->
+        <section id="contenedor-productos">
+            <!-- Renderizo productos-->
+        </section>        
+
+        <!-- Sección carrito -->
+        <aside class="carrito-lateral">
+            <h2>Mi carrito</h2>
+            <ul id="lista-carrito">
+                <!-- Items del carrito -->
+            </ul>
+            <div class="total-carrito">
+                <strong>Total: $<span id="precio-total">0</span></strong>
+            </div>
+            <button id="btn-vaciar-carrito">VACIAR CARRITO</button>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Matias Redruello</p>
+    </footer>
+    <script src="index.js" defer></script>   
+
+</body>
+</html>
